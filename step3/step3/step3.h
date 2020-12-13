@@ -43,5 +43,4 @@ int checkSection(char section[3][3]);
 void printCube();
 
 /*실행 결과출력*/
-int checkState();
 void printResult(int time);
