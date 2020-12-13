@@ -19,14 +19,17 @@
 
 ☑ QUEUE* makeQueue
   : 큐를 할당하고 makeNode 실행 후 원형 큐를  리턴한다
+  
   ➡ void makeNode
     : 알파벳 마다 노드를 만들고 연결한다. 
       원형 큐를 만든다.
 
 ☑ void pushWord
   : 입력받은 방향(L/R)에 따라 단어를 밀어낸다.
+  
   ➡ void pushLeft
     : 큐의 head가 가리키는 부분을 주어진 숫자만큼 이동시켜 단어를 왼쪽으로 밀어낸다.
+  
   ➡ void pushRight
     : pushLeft 함수를 사용하여 (단어의 길이- 주어진 숫자) 만큼 단어를 오른쪽으로 밀어내는 결과를 얻는다.
 
