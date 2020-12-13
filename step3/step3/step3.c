@@ -4,12 +4,18 @@ int main() {
 
 	int exit_flag = 0;
 	int end_flag = 0;
+	char mix_flag;
 	char command[MAX_INPUT];
 	rotate_count = 0;
 	int total_time;
 
 	initCube();
-	mixCube(); //公累困 集扁
+
+	printf("Choose to Mix (Y/N): ");
+	scanf("%c", &mix_flag);
+	if(mix_flag == 'Y')
+		mixCube(); //公累困 集扁
+
 	printCube();
 
 	clock_t start = clock();
