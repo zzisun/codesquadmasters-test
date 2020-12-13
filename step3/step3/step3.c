@@ -18,11 +18,11 @@ int main() {
 		if (exit_flag)
 			break;
 		execute(command);
-		/*end_flag = checkCube();
+		end_flag = checkCube();
 		if (end_flag) {
 			printf("축하합니다! 큐브의 모든면이 맞춰졌습니다~\n");
 			break;
-		}*/
+		}
 	}
 	clock_t end = clock();
 	total_time = (int)(end - start)/CLOCKS_PER_SEC;
