@@ -49,6 +49,7 @@
   ➡ void rotateR
   
   ➡ void rotateD
+  
     : 각 입력에 따라 큐브의 색의 값을 조정한다.    
 
 ☑ void execute
