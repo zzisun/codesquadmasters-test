@@ -21,7 +21,7 @@ int rotate_count; //조작횟수
 void initCube();
 void initSection(char section[3][3], char color);
 /*큐브 무작위 섞기*/
-//void mixCube();
+void mixCube();
 
 int getInput(char* command);
 

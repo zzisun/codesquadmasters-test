@@ -9,7 +9,7 @@ int main() {
 	int total_time;
 
 	initCube();
-	//mixCube();
+	mixCube(); //무작위 섞기
 	printCube();
 
 	clock_t start = clock();
@@ -46,16 +46,32 @@ void initSection(char section[3][3], char color) {
 		}
 	}
 }
-/*void mixCube() {
+void mixCube() {
 	int count;
 
 	srand(time(NULL));
 
-	for (int i = 0; i < 6; i++) {
-		count = rand() % (4 + 1);
-		for(j=0; j)
-	}
-}*/
+	count = rand() % (4 + 1);
+	for (int i = 0; i < count; i++)
+		rotateU();
+
+	count = rand() % (4 + 1);
+	for (int i = 0; i < count; i++)
+		rotateB();
+
+	count = rand() % (4 + 1);
+	for (int i = 0; i < count; i++)
+		rotateL();
+
+	count = rand() % (4 + 1);
+	for (int i = 0; i < count; i++)
+		rotateR();
+
+	count = rand() % (4 + 1);
+	for (int i = 0; i < count; i++)
+		rotateD();
+
+}
 
 int getInput(char* command) {
 	int res;
